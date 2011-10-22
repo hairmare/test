@@ -1,7 +1,7 @@
 <?php
 require_once 'PHPUnit/Framework.php';
 
-require_once 'Test/Base.php';
+require_once 'src/library/Test/Base.php';
 
 /**
  * Test class for Test_Base.
