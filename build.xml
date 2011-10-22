@@ -128,7 +128,7 @@
 
  <target name="phpunit" description="Run unit tests with PHPUnit">
   <exec executable="phpunit" failonerror="true">
-    <arg value="-d include_path=src/library/:/usr/share/pear:/usr/share/php"/>
+    <!--arg value="-d include_path=src/library/:/usr/share/pear:/usr/share/php"/-->
     <arg value="tests/"/>
   </exec>
  </target>
