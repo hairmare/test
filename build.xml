@@ -118,7 +118,7 @@
          description="Generate API documentation using PHPDocumentor">
   <exec executable="phpdoc">
    <arg value="--directory"/>
-   <arg path="${source}"/>
+   <arg path="src/"/>
    <arg value="--target"/>
    <arg path="${basedir}/build/api"/>
   </exec>
