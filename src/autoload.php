@@ -2,6 +2,8 @@
 /**
  * unfinished work on autoloader
  *
+ * PHp Version 5
+ *
  * @category Test
  * @package  Test
  * @author   Lucas Bickel <hairmare@purplehaze.ch>
