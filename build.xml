@@ -93,7 +93,6 @@
  <target name="phpcs"
          description="Find coding standard violations using PHP_CodeSniffer">
   <exec executable="phpcs">
-   <arg value="--standard=${basedir}/build/phpcs.xml" />
    <arg path="${basedir}/src" />
   </exec>
  </target>
@@ -103,7 +102,6 @@
   <exec executable="phpcs" output="/dev/null">
    <arg value="--report=checkstyle" />
    <arg value="--report-file=${basedir}/build/logs/checkstyle.xml" />
-   <arg value="--standard=${basedir}/build/phpcs.xml" />
    <arg path="${basedir}/src" />
   </exec>
  </target>
@@ -128,7 +126,7 @@
 
  <target name="phpunit" description="Run unit tests with PHPUnit">
   <exec executable="phpunit" failonerror="true">
-    <!--arg value="-d include_path=src/library/:/usr/share/pear:/usr/share/php"/-->
+    <arg value="-d include_path=src/library/:/usr/share/pear:/usr/share/php"/>
     <arg value="tests/"/>
   </exec>
  </target>
